@@ -23,7 +23,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Rendah(this.suhu), Kebisingan.Tenang(this.kebisingan), Pencahayaan.Redup(this.pencahayaan))
         const avg_produk = 148.0
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_2() {
@@ -38,7 +41,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Rendah(this.suhu), Kebisingan.Tenang(this.kebisingan), Pencahayaan.AgakTerang(this.pencahayaan))
         const avg_produk = 150.9
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_3() {
@@ -53,7 +59,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Rendah(this.suhu), Kebisingan.Tenang(this.kebisingan), Pencahayaan.Terang(this.pencahayaan))
         const avg_produk = 146.5
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_4() {
@@ -68,7 +77,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Rendah(this.suhu), Kebisingan.AgakBising(this.kebisingan), Pencahayaan.Redup(this.pencahayaan))
         const avg_produk = 143.1
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_5() {
@@ -83,7 +95,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Rendah(this.suhu), Kebisingan.AgakBising(this.kebisingan), Pencahayaan.AgakTerang(this.pencahayaan))
         const avg_produk = 146.53
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_6() {
@@ -99,7 +114,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Rendah(this.suhu), Kebisingan.AgakBising(this.kebisingan), Pencahayaan.Terang(this.pencahayaan))
         const avg_produk = 142.73
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_7() {
@@ -114,7 +132,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Rendah(this.suhu), Kebisingan.Bising(this.kebisingan), Pencahayaan.Redup(this.pencahayaan))
         const avg_produk = 136.73
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_8() {
@@ -129,7 +150,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Rendah(this.suhu), Kebisingan.Bising(this.kebisingan), Pencahayaan.AgakTerang(this.pencahayaan))
         const avg_produk = 140.77
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_9() {
@@ -144,7 +168,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Rendah(this.suhu), Kebisingan.Bising(this.kebisingan), Pencahayaan.Terang(this.pencahayaan))
         const avg_produk = 135.97
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_10() {
@@ -159,7 +186,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Normal(this.suhu), Kebisingan.Tenang(this.kebisingan), Pencahayaan.Redup(this.pencahayaan))
         const avg_produk = 149.73
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_11() {
@@ -174,7 +204,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Normal(this.suhu), Kebisingan.Tenang(this.kebisingan), Pencahayaan.AgakTerang(this.pencahayaan))
         const avg_produk = 153.27
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_12() {
@@ -189,7 +222,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Normal(this.suhu), Kebisingan.Tenang(this.kebisingan), Pencahayaan.Terang(this.pencahayaan))
         const avg_produk = 152.13
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_13() {
@@ -204,7 +240,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Normal(this.suhu), Kebisingan.AgakBising(this.kebisingan), Pencahayaan.Redup(this.pencahayaan))
         const avg_produk = 148
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_14() {
@@ -219,7 +258,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Normal(this.suhu), Kebisingan.AgakBising(this.kebisingan), Pencahayaan.AgakTerang(this.pencahayaan))
         const avg_produk = 150.63
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_15() {
@@ -234,7 +276,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Normal(this.suhu), Kebisingan.AgakBising(this.kebisingan), Pencahayaan.Terang(this.pencahayaan))
         const avg_produk = 147.63
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_16() {
@@ -249,7 +294,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Normal(this.suhu), Kebisingan.Bising(this.kebisingan), Pencahayaan.Redup(this.pencahayaan))
         const avg_produk = 141.47
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_17() {
@@ -264,7 +312,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Normal(this.suhu), Kebisingan.Bising(this.kebisingan), Pencahayaan.AgakTerang(this.pencahayaan))
         const avg_produk = 145.67
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_18() {
@@ -279,7 +330,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Normal(this.suhu), Kebisingan.Bising(this.kebisingan), Pencahayaan.AgakTerang(this.pencahayaan))
         const avg_produk = 140.2
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_19() {
@@ -294,7 +348,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Tinggi(this.suhu), Kebisingan.Tenang(this.kebisingan), Pencahayaan.Redup(this.pencahayaan))
         const avg_produk = 142.10
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_20() {
@@ -309,7 +366,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Tinggi(this.suhu), Kebisingan.Tenang(this.kebisingan), Pencahayaan.AgakTerang(this.pencahayaan))
         const avg_produk = 146.53
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_21() {
@@ -324,7 +384,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Tinggi(this.suhu), Kebisingan.Tenang(this.kebisingan), Pencahayaan.Terang(this.pencahayaan))
         const avg_produk = 142.17
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_22() {
@@ -339,7 +402,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Tinggi(this.suhu), Kebisingan.AgakBising(this.kebisingan), Pencahayaan.Redup(this.pencahayaan))
         const avg_produk = 138.7
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_23() {
@@ -354,7 +420,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Tinggi(this.suhu), Kebisingan.AgakBising(this.kebisingan), Pencahayaan.AgakTerang(this.pencahayaan))
         const avg_produk = 141.4
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_24() {
@@ -369,7 +438,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Tinggi(this.suhu), Kebisingan.AgakBising(this.kebisingan), Pencahayaan.Terang(this.pencahayaan))
         const avg_produk = 138.3
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_25() {
@@ -384,7 +456,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Tinggi(this.suhu), Kebisingan.Bising(this.kebisingan), Pencahayaan.Redup(this.pencahayaan))
         const avg_produk = 133.33
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_26() {
@@ -399,7 +474,10 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Tinggi(this.suhu), Kebisingan.Bising(this.kebisingan), Pencahayaan.AgakTerang(this.pencahayaan))
         const avg_produk = 138.33
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 
     Rule_27() {
@@ -415,6 +493,9 @@ export default class Inferensi {
         // get alpa prdikat
         const alpha_predikat = Math.min( Suhu.Tinggi(this.suhu), Kebisingan.Bising(this.kebisingan), Pencahayaan.Terang(this.pencahayaan))
         const avg_produk = 133.77
-        return avg_produk * alpha_predikat
+        return {
+            totalAvgProduk: avg_produk * alpha_predikat,
+            alpha_predikat
+        }
     }
 }

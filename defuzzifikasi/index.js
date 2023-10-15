@@ -1,7 +1,13 @@
-export default (array_data) => {
-    const avg_final_produk = array_data.reduce((accumulator, currentValue) => {
+const calcFunc = (data) => {
+    return data.reduce((accumulator, currentValue) => {
         return accumulator + currentValue
     }, 0)
+}
 
-    return avg_final_produk
+export const sumTotalAvgProduk = (data) => {
+    return calcFunc(data)
+}
+
+export const sumTotalAlphaPredikat = (data) => {
+    return calcFunc(data)
 }
